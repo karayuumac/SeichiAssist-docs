@@ -1,0 +1,28 @@
+site_name: SeichiAssist-docs
+theme:
+  name: material
+extra:
+  font:
+    text: "Note Sans JP"
+    code: "Consolas"
+extra_css:
+  - "https://fonts.googleapis.com/earlyaccess/notosansjp.css"
+  - "https://fonts.googleapis.com/css?family=Open+Sans:600,800"
+  - "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+  - "external/css/change_img_tag.css"
+markdown_extensions:
+  - admonition
+  - codehilite
+  - fontawesome_markdown
+  - attr_list
+plugins:
+  - search:
+      lang: ja
+
+nav:
+  - '初めに': index.md
+  - 'ガイド':
+      - '開発者向けガイド': guide/developer.md
+
+# Copyright
+# copyright: '©︎ 2020 ギガンティック☆整地鯖'
