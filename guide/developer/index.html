@@ -234,10 +234,10 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    環境構築
+    開発環境構築
   </a>
   
-    <nav class="md-nav" aria-label="環境構築">
+    <nav class="md-nav" aria-label="開発環境構築">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -312,10 +312,10 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    環境構築
+    開発環境構築
   </a>
   
-    <nav class="md-nav" aria-label="環境構築">
+    <nav class="md-nav" aria-label="開発環境構築">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -370,7 +370,7 @@
                 <h1 id="_1">開発者向けガイド</h1>
 <p>このページでは、SeichiAssistの開発をお手伝いいただける方に向けて役立つ情報を掲載しています。<br>
 初心者の方でも分かりやすいように、チュートリアル形式で説明していきますので、説明を見ながら実際に手を動かしてやってみましょう。</p>
-<h2 id="_2">環境構築</h2>
+<h2 id="_2">開発環境構築</h2>
 <p>兎にも角にも、まずは環境を整えるところから始めましょう。</p>
 <h4 id="1">1. エディタのインストール</h4>
 <p>プログラミングをするには、ソースコードを編集できるソフトが必要です。
@@ -397,12 +397,12 @@
 </div>
 <p>それでは、SeichiAssistプラグインのソースコードをフォークしましょう。</p>
 <p>まずは、SeichiAssistのレポジトリを開きます。リンクは <a href="https://github.com/GiganticMinecraft/SeichiAssist" target="_blank"><i class="fa fa-external-link"></i> こちら</a> です。
-右上に<code>Fork</code>というボタンがあると思います。クリックしてレポジトリをフォークします。</p>
+右上の<code>Fork</code>ボタンをクリックしてレポジトリをフォークします。</p>
 <p><img alt="Forkボタン" src="../../img/guide/developer/developer_guide_1.png" /></p>
 <p>Forkすると、自分のGithubページにレポジトリが表示されると思います。
 緑色の<code>Code</code>ボタンをクリックします。</p>
 <p><img alt="自身のGithubページ" src="../../img/guide/developer/developer_guide_2.png" /></p>
-<p>以下のような画面となると思います。そこで、<code>Open with Github Desktop</code>をクリックします。</p>
+<p>以下のような画面となったら、<code>Open with Github Desktop</code>をクリックします。</p>
 <p><img alt="Github Desktopを開く" src="../../img/guide/developer/developer_guide_3.png" /></p>
 <p>Github Desktopアプリが開き、以下のような画面が出ると思います。<code>Clone</code>をクリックします。</p>
 <p><img alt="Clone" src="../../img/guide/developer/developer_guide_4.png" /></p>
@@ -411,8 +411,22 @@
 <h4 id="4-intellij-idea">4. IntelliJ IDEA でソースコードを開く</h4>
 <p>では、IntelliJ IDEA を起動しましょう。</p>
 <p>起動したら、以下のような画面が出ると思います。(一部、ぼかしを入れています。)</p>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>起動しても以下の画面が出なかった場合、上のメニューバーから<code>File-&gt;Close Project</code>をクリックしてみてください。</p>
+</div>
 <p><code>Open or Inport</code>をクリックします。</p>
 <p><img alt="IntelliJ 起動画面" src="../../img/guide/developer/developer_guide_6.png" /></p>
+<p>次に、先ほどForkしたソースコードのフォルダを選択し、<code>Open</code>をクリックします。</p>
+<p><img alt="ソースコードを選択" src="../../img/guide/developer/developer_guide_7.png" /></p>
+<p><code>sbt project</code>にチェックが入っていることを確認し、<code>OK</code>をクリックします。</p>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>以下の画面が出なかった場合、ソースコードのフォルダ内の<code>.idea</code>フォルダを削除し、再度 IntelliJ でフォルダを開いてみましょう。</p>
+</div>
+<p><img alt="sbt project" src="../../img/guide/developer/developer_guide_8.png" /></p>
+<p>buildが終わるまで数分待ちましょう。</p>
+<p>以上で環境構築は終了です。お疲れ様でした！</p>
                 
               
               
